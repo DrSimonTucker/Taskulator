@@ -27,21 +27,6 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.api-client</groupId>
-      <artifactId>google-api-client</artifactId>
-      <version>1.8.0-beta</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.apis</groupId>
-      <artifactId>google-api-services-calendar</artifactId>
-      <version>v3-1.3.1-beta</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.gdata</groupId>
-      <artifactId>gdata-core-1.0</artifactId>
-      <version>1.41.5</version>
-    </dependency>
-    <dependency>
       <groupId>com.google.gdata</groupId>
       <artifactId>gdata-calendar-2.0</artifactId>
       <version>1.41.5</version>
@@ -83,6 +68,13 @@
               <storetype>jks</storetype>
               <alias>task</alias>
               <verify>true</verify>
+
+	      <dnameCn>Simon Tucker</dnameCn>
+	      <dnameOu>Computer Science</dnameOu>
+	      <dnameO>University of Sheffield</dnameO>
+	      <dnameL>Sheffield</dnameL>
+	      <dnameSt>Yorkshire</dnameSt>
+	      <dnameC>UK</dnameC>
 
 	      <keystoreConfig>
 		<delete>true</delete> <!-- delete the keystore -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<jnlp spec="1.0+" codebase="https://staffwww.dcs.shef.ac.uk/people/S.Tucker/tasks/" href="$outputFile">
+  <information>
+    <title>Taskulator</title>
+    <vendor>Simon</vendor>
+    <shortcut online="true">
+      <menu />
+      <desktop submenu="/Internet"/>
+    </shortcut>
+    <description>A simple taskulator</description>
+    <offline-allowed />
+  </information>
+
+  <security>
+    <all-permissions />
+  </security>
+
+  <resources>
+    <j2se version="1.6+" initial-heap-size="32m" max-heap-size="128m" />
+    <property name="jnlp.versionEnabled" value="true"/>
+    $dependencies
+  </resources>
+   
+  <application-desc main-class="$mainClass" />
+    
+</jnlp>
