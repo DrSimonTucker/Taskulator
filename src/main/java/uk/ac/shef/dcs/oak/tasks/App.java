@@ -68,6 +68,8 @@ public class App extends JFrame
 
    private void updateCurrentTask() throws Exception
    {
+      currentTask = "No Task";
+
       // Create a CalenderService and authenticate
       CalendarService myService = new CalendarService("simont-tester-1");
 
