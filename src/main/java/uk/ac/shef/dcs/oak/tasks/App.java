@@ -69,7 +69,7 @@ public class App extends JFrame
    private void updateCurrentTask() throws Exception
    {
       // Create a CalenderService and authenticate
-      CalendarService myService = new CalendarService("exampleCo-exampleApp-1");
+      CalendarService myService = new CalendarService("simont-tester-1");
 
       myService.setUserCredentials("s.tucker@sheffield.ac.uk", password);
       URL feedUrl = new URL(
