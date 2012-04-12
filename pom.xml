@@ -59,7 +59,43 @@
 	      <target>1.6</target>
 	</configuration>
       </plugin>
+
+      <plugin>
+	<groupId>org.codehaus.mojo</groupId>
+	<artifactId>webstart-maven-plugin</artifactId>
+	<version>1.0-beta-3</version>
+      </plugin>
     </plugins>
+
+    <pluginManagement>
+      <plugins>
+	<plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>webstart-maven-plugin</artifactId>
+          <configuration>
+            <jnlp>
+              <mainClass>uk.ac.shef.dcs.oak.tasks.App</mainClass>
+            </jnlp>
+            <sign>
+              <keystore>task.jks</keystore>
+              <keypass>task-pass</keypass>
+              <storepass>task-pass</storepass>
+              <storetype>jks</storetype>
+              <alias>task</alias>
+              <verify>true</verify>
+
+	      <keystoreConfig>
+		<delete>true</delete> <!-- delete the keystore -->
+		<gen>true</gen>       <!-- optional shortcut to generate the store. -->
+	      </keystoreConfig>
+
+            </sign>
+            <verbose>true</verbose>
+	  </configuration>
+	</plugin>
+	
+      </plugins>
+    </pluginManagement>
   </build>
 
 </project>
